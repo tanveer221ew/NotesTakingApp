@@ -1,8 +1,6 @@
-// Get the note container and input form elements
 const noteContainer = document.getElementById("note-container");
 const inputForm = document.getElementById("inputform");
 
-// Function to save notes to local storage
 function saveNotes() {
   const notes = [];
   const noteElements = noteContainer.children;
@@ -16,7 +14,6 @@ function saveNotes() {
   localStorage.setItem("notes", JSON.stringify(notes));
 }
 
-// Function to load notes from local storage
 function loadNotes() {
   const storedNotes = localStorage.getItem("notes");
   if (storedNotes) {
@@ -43,16 +40,13 @@ function loadNotes() {
   }
 }
 
-// Load notes from local storage when the page loads
 loadNotes();
 
-// Add event listener to the add button
 document.getElementById("addbutton").addEventListener("click", () => {
   inputForm.style.display = "flex";
   inputForm.classList.add("show");
 });
 
-// Add event listener to the add note button
 document.getElementById("add").addEventListener("click", () => {
   const note = document.createElement("div");
   note.className = "note";
