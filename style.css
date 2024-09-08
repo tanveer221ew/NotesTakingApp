@@ -1,27 +1,8 @@
-@media (max-width: 768px) {
     .main{
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 90vw;
     }
-    .noteBox, .note{
-        width: 200px;
-        height: 200px;
-    }
-    .addButton{
-        height: 80px;
-        width: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .main{
-        flex-direction: column;
-    }
-    .noteBox, .note{
-        width: 180px;
-        height: 180px;
-    }
-    .addButton{
-        height: 70px;
-        width: 70px;
-    }
-}
