@@ -129,9 +129,6 @@ h1{
     cursor: pointer;
     text-align: center;
 }
-.display{
-    display: flex;
-}
 .note{
     width: 200px;
     height: 200px;
@@ -147,38 +144,16 @@ h1{
     overflow-y: auto;
     text-overflow: ellipsis;
     word-break: break-word;
-    display: flex;
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .note:hover{
     transform: scale(1.1);
-    opacity: 0.8s;
-}
-#text{
-    border: solid #487df9;
-    border-radius: 12px;
-    padding: 10px;
-}
-.closeb{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    border: none;
-    background-color: red;
-    color: white;
-}
-.he{
-    height: 100px ;
-    width: 100px;
-    background-color: black;
+    opacity: 0.8;
 }
 #note-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    width: 50w;
+    gap: 10px;
 }
 
 @media (max-width: 768px) {
@@ -197,7 +172,7 @@ h1{
 
 @media (max-width: 480px) {
     .main{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .noteBox, .note{
         width: 180px;
