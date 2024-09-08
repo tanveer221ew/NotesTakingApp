@@ -180,7 +180,6 @@ h1{
     grid-template-columns: repeat(4, 1fr);
     width: 50w;
 }
-
 @media (max-width: 768px) {
     .main{
         grid-template-columns: 1fr;
@@ -195,13 +194,13 @@ h1{
     }
     h2{
         font-size: 18px;
-        margin-botton: 8px;
+        margin-bottom: 8px;
     }
 }
 
 @media (max-width: 480px) {
     .main{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 1fr;
     }
     .noteBox, .note{
         width: 180px;
